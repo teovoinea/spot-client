@@ -1,0 +1,10 @@
+[package]
+name = "spot-client"
+version = "0.1.0"
+authors = ["teovoinea <voinea.teodor@gmail.com>"]
+
+[dependencies]
+
+[dependencies.stdweb]
+
+git = "https://github.com/koute/stdweb.git"
