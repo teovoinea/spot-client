@@ -111,9 +111,11 @@ fn main() {
         output_msg(&format!("> Connection Closed: {}", event.reason()));
     }));
     
-    ws.add_event_listener( enclose!( (output_msg) move |event: SocketMessageEvent| {
+    ws.add_event_listener( enclose!( (context, output_msg) move |event: SocketMessageEvent| {
         let data: Vec<u8> = Vec::from(event.data().into_array_buffer().unwrap());
         let decoded_pixel: PaintPixel = deserialize(&data).unwrap();
+        context.fill_rect(f64::from(decoded_pixel.x - 5), f64::from(decoded_pixel.y - 5)
+                    , 10.0, 10.0);
         output_msg(&format!("Received pixel: {:?}", decoded_pixel));
     }));
 
