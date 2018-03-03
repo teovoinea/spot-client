@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/teovoinea/spot-client.svg?branch=master)](https://travis-ci.org/teovoinea/spot-client)
+
 # spot-client
 
 The front end for the Spot game.
