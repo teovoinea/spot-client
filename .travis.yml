@@ -14,5 +14,5 @@ matrix:
   allow_failures:
     - rust: nightly
 script:
-  - sudo ./install_cargo_web.sh
-  - cargo web build --release --target=wasm32-unknown-unknown
+  - ./install_cargo_web.sh
+  - cargo-web build --release --target=wasm32-unknown-unknown
