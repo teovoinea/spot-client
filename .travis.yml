@@ -1,4 +1,8 @@
 language: rust
+
+cache:
+cargo: true
+
 rust:
   - stable
   - beta
@@ -7,4 +11,5 @@ matrix:
   allow_failures:
     - rust: nightly
 script:
-  cargo test -- --test-threads=1
+  ./install_cargo_web.sh
+  cargo web build --release --target=wasm32-unknown-unknown
