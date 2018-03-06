@@ -7,12 +7,12 @@ dist: trusty
 sudo: true
 
 rust:
-  - stable
-  - beta
+#  - stable
+#  - beta
   - nightly
-matrix:
-  allow_failures:
-    - rust: nightly
+#matrix:
+#  allow_failures:
+#    - rust: nightly
 script:
   - ./install_cargo_web.sh
   - cargo-web build --release --target=wasm32-unknown-unknown
