@@ -11,3 +11,4 @@ bincode = "1.0.0"
 [dependencies.stdweb]
 
 git = "https://github.com/koute/stdweb.git"
+rev = "85f7aa4"
