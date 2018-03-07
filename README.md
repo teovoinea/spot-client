@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/teovoinea/spot-client.svg?branch=master)](https://travis-ci.org/teovoinea/spot-client)
+[![Build status](https://ci.appveyor.com/api/projects/status/ld3b3u2wa9rw6m7j?svg=true)](https://ci.appveyor.com/project/teovoinea/spot-client)
 
 # spot-client
 
