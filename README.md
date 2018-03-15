@@ -5,6 +5,9 @@
 # spot-client
 
 The front end for the Spot game.
+![Spot Demo](https://raw.githubusercontent.com/teovoinea/spot-client/master/demo.PNG)
+
+A video demo can be found here: [https://www.youtube.com/watch?v=zkO00mz8FtU](https://www.youtube.com/watch?v=zkO00mz8FtU)
 
 ## Running
 
