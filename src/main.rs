@@ -153,8 +153,8 @@ fn main() {
         if mouse_down.load(Ordering::Relaxed) {
             let x = event.client_x() - left;
             let y = event.client_y() - top;
-            //context.fill_rect(f64::from(x), f64::from(y)
-            //        , 10.0, 10.0);
+            context.fill_rect(f64::from(x), f64::from(y)
+                    , 10.0, 10.0);
             let color: String = match context.get_fill_style() {
                 CanvasStyle::String(s) => {
                     s
