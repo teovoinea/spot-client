@@ -73,7 +73,7 @@ fn main() {
     });
     output_msg("> Connecting...");
 
-    let ws = WebSocket::new_with_protocols("ws://localhost:2794", &["rust-websocket"]).unwrap();
+    let ws = WebSocket::new("ws://localhost:2794").unwrap();
     ws.set_binary_type(SocketBinaryType::ArrayBuffer);
 
     let canvas: CanvasElement = document().query_selector( "#canvas" ).unwrap().unwrap().try_into().unwrap();
